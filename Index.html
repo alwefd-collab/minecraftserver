@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestiario de Bloques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== CABECERA ========== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">📖</span>
+        <span class="logo-text">
+          <span class="logo-main">BESTIARIO</span>
+          <span class="logo-sub">DE BLOQUES</span>
+        </span>
+      </a>
+
+      <div class="search-box">
+        <input type="search" placeholder="Buscar criatura...">
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SECCIÓN HERO (BANNER PRINCIPAL) ========== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>
+          Descubre a todas las criaturas<br>
+          <span class="text-green">del mundo de bloques</span>
+        </h1>
+        <p>
+          Explora el bestiario más completo de criaturas de Minecraft.
+          Aprende sobre su comportamiento, hábitats, estadísticas y curiosidades
+          de cada mob del juego.
+        </p>
+        <a href="#" class="btn-primary">
+          <span class="btn-icon">⚔️</span>
+          Explorar bestiario
+        </a>
+    </div>
+  </section>
+
+  <!-- ========== FILTROS POR CATEGORÍA ========== -->
+  <section class="categories">
+    <div class="categories-inner">
+      <h2 class="categories-title">Explora por categoría</h2>
+      <div class="category-pills">
+        <button class="pill active">
+          <span class="pill-icon">🌐</span> Todas
+        </button>
+        <button class="pill">
+          <span class="pill-icon">⚪</span> Neutrales
+        </button>
+        <button class="pill">
+          <span class="pill-icon">💀</span> Hostiles
+        </button>
+        <button class="pill">
+          <span class="pill-icon">😊</span> Amigables
+        </button>
+        <button class="pill">
+          <span class="pill-icon">👑</span> Jefes
+        </button>
+        <button class="pill">
+          <span class="pill-icon">✨</span> Míticas
+        </button>
+        <button class="pill">
+          <span class="pill-icon">🌊</span> Acuáticas
+        </button>
+        <button class="pill">
+          <span class="pill-icon">🦅</span> Voladoras
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="main-card">
+    <div class="main-grid">
+
+      <!-- ----- COLUMNA IZQUIERDA: Lista de criaturas ----- -->
+      <aside class="sidebar">
+        <ul class="creature-list">
+          <li class="creature-item active">
+            <span class="creature-icon creeper-icon"></span>
+            Creeper
+          </li>
+          <li class="creature-item">
+            <span class="creature-icon zombie-icon"></span>
+            Zombi
+          </li>
+          <li class="creature-item">
+            <span class="creature-icon skeleton-icon"></span>
+            Esqueleto
+          </li>
+          <li class="creature-item">
+            <span class="creature-icon spider-icon"></span>
+            Araña
+          </li>
+          <li class="creature-item">
+            <span class="creature-icon enderman-icon"></span>
+            Enderman
+          </li>
+          <li class="creature-item">
+            <span class="creature-icon blaze-icon"></span>
+            Blaze
+          </li>
+          <li class="creature-item">
+            <span class="creature-icon villager-icon"></span>
+            Aldeano
+          </li>
+        </ul>
+      </aside>
+
+      <!-- ----- COLUMNA CENTRAL: Detalle de la criatura ----- -->
+      <section class="detail-panel">
+        <div class="detail-image">
+          <img src="Images/Creeper.png" alt="Creeper de Minecraft" class="detail-creature-img">
+        </div>
+        <div class="detail-info">
+          <h2 class="detail-title">Creeper</h2>
+          <p class="detail-subtitle">La criatura explosiva</p>
+          <p class="detail-desc">
+            El Creeper es una de las criaturas más icónicas de Minecraft.
+            Se acerca sigilosamente a los jugadores y explota al estar cerca,
+            causando daño considerable y destruyendo bloques cercanos.
+          </p>
+          <div class="stats-table">
+            <div class="stat-row">
+              <span class="stat-label">Tipo</span>
+              <span class="stat-value hostile">Hostil</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Salud</span>
+              <span class="stat-value hearts">❤️ ❤️ ❤️ ❤️ ❤️ ❤️</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Daño</span>
+              <span class="stat-value">Alto</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Hábitat</span>
+              <span class="stat-value">Superficies, cuevas</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Caída de objetos</span>
+              <span class="stat-value">
+                <span class="drop-icon">💣</span> Pólvora
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- COLUMNA DERECHA: Comportamiento y media ----- -->
+      <aside class="info-panel">
+        <div class="tabs">
+          <button class="tab active">Comportamiento</button>
+          <button class="tab">Hábitat</button>
+          <button class="tab">Curiosidades</button>
+        </div>
+
+        <ul class="behavior-list">
+          <li>
+            <span class="behavior-icon creeper-icon"></span>
+            <span>Se acerca al jugador sin hacer ruido.</span>
+          </li>
+          <li>
+            <span class="behavior-icon">✨</span>
+            <span>Parpadea antes de explotar.</span>
+          </li>
+          <li>
+            <span class="behavior-icon">💥</span>
+            <span>Su explosión puede destruir bloques y causar mucho daño.</span>
+          </li>
+          <li>
+            <span class="behavior-icon">💡</span>
+            <span>Los gatos y ocelotes huyen de los creepers.</span>
+          </li>
+        </ul>
+
+        <div class="media-card">
+          <div class="media-image">
+            <div class="forest-scene">
+              <div class="forest-creeper">
+                <div class="fc-head"></div>
+                <div class="fc-body"></div>
+              </div>
+            </div>
+          </div>
+          <blockquote>
+            "Así que ten cuidado donde pisas... Podría ser lo último que escuches."
+          </blockquote>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+</body>
+</html>
