@@ -54,18 +54,31 @@
   <section class="categories">
     <div class="categories-inner">
       <h2 class="categories-title">Explora por categoría</h2>
-      <div class="category-pills">
+     <div class="category-pills">
+        <!-- active = categoría seleccionada por defecto (Todas) -->
         <button class="pill active">
           <span class="pill-icon">🌐</span> Todas
         </button>
         <button class="pill">
-          <span class="pill-icon">🆕</span> Nuevo
+          <span class="pill-icon">⚪</span> Neutrales
         </button>
         <button class="pill">
           <span class="pill-icon">💀</span> Hostiles
         </button>
         <button class="pill">
           <span class="pill-icon">😊</span> Amigables
+        </button>
+        <button class="pill">
+          <span class="pill-icon">👑</span> Jefes
+        </button>
+        <button class="pill">
+          <span class="pill-icon">✨</span> Míticas
+        </button>
+        <button class="pill">
+          <span class="pill-icon">🌊</span> Acuáticas
+        </button>
+        <button class="pill">
+          <span class="pill-icon">🦅</span> Voladoras
         </button>
       </div>
     </div>
@@ -76,37 +89,8 @@
     <div class="main-grid">
 
       <!-- ----- COLUMNA IZQUIERDA: Lista de criaturas ----- -->
-      <aside class="sidebar">
-        <ul class="creature-list">
-          <li class="creature-item active">
-            <span class="creature-icon creeper-icon"></span>
-            Creeper
-          </li>
-          <li class="creature-item">
-            <span class="creature-icon zombie-icon"></span>
-            Zombi
-          </li>
-          <li class="creature-item">
-            <span class="creature-icon skeleton-icon"></span>
-            Esqueleto
-          </li>
-          <li class="creature-item">
-            <span class="creature-icon spider-icon"></span>
-            Araña
-          </li>
-          <li class="creature-item">
-            <span class="creature-icon enderman-icon"></span>
-            Enderman
-          </li>
-          <li class="creature-item">
-            <span class="creature-icon blaze-icon"></span>
-            Blaze
-          </li>
-          <li class="creature-item">
-            <span class="creature-icon villager-icon"></span>
-            Aldeano
-          </li>
-        </ul>
+     <aside class="sidebar">
+        <ul class="creature-list"></ul>
       </aside>
 
       <!-- ----- COLUMNA CENTRAL: Detalle de la criatura ----- -->
@@ -194,5 +178,6 @@
     </div>
   </main>
 
+ <script src="script.js"></script>
 </body>
 </html>
