@@ -257,19 +257,6 @@ ul {
 
 }
 
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--green-dark);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 24px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: background 0.2s, transform 0.15s;
-}
-
 .btn-primary:hover {
   background: #1B5E20;
   transform: translateY(-1px);
