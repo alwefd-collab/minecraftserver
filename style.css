@@ -429,68 +429,73 @@ ul {
 
 .creeper-icon {
   background-color: #5D8A3C;
-  background-image: url('Images/mobs/creeper.png');
+  background-image: url('Images/cabeza-creeper.jpeg');
 }
 .zombie-icon {
   background-color: #4a7c59;
-  background-image: url('Images/mobs/zombie.png');
+  background-image: url('Images/zombie-face.png');
 }
 .skeleton-icon {
   background-color: #d4d4c8;
-  background-image: url('Images/mobs/skeleton.png');
+  background-image: url('Images/skeleton-face.png');
 }
 .spider-icon {
   background-color: #3d3d3d;
-  background-image: url('Images/mobs/spider.png');
+  background-image: url('Images/spider-face.png');
   border-radius: 6px;
 }
 .enderman-icon {
   background-color: #1a1a2e;
-  background-image: url('Images/mobs/enderman.png');
+  background-image: url('Images/enderman-face.png');
 }
 .blaze-icon {
   background-color: #ff9800;
-  background-image: url('Images/mobs/blaze.png');
+  background-image: url('Images/blaze-face.png');
 }
 .villager-icon {
   background-color: #8d6e63;
-  background-image: url('Images/mobs/villager.png');
+  background-image: url('Images/villager-face.png');
 }
 .wither-icon {
   background-color: #424242;
-  background-image: url('Images/mobs/wither.png');
+  background-image: url('Images/wither-face.png');
 }
 .dragon-icon {
   background-color: #311B92;
-  background-image: url('Images/mobs/ender-dragon.png');
+  background-image: url('Images/enderdragon-face.png');
 }
 .warden-icon {
   background-color: #004D40;
+  background-image: url('Images/warden-face.png');
 }
 .guardian-icon {
   background-color: #546E7A;
+  background-image: url('Images/guardian-face.png');
 }
 .drowned-icon {
   background-color: #1A5276;
+  background-image: url('Images/drowned-face.png');
 }
 .ghast-icon {
   background-color: #ECEFF1;
-  background-image: url('Images/mobs/ghast.png');
+  background-image: url('Images/ghast-face.png');
   border: 1px solid var(--border);
 }
 .phantom-icon {
   background-color: #1A237E;
+  background-image: url('Images/phantom-face.png');
 }
 .golem-icon {
   background-color: #78909C;
+  background-image: url('Images/iron-golem-face.png');
 }
 .wolf-icon {
   background-color: #B0BEC5;
-  background-image: url('Images/mobs/wolf.png');
+  background-image: url('Images/wolf-face.png');
 }
 .cow-icon {
   background-color: #A1887F;
-  background-image: url('Images/mobs/cow.png');
+  background-image: url('Images/cow-face.png');
 }
 
 /* ===== PANEL DE DETALLE ===== */
@@ -674,35 +679,19 @@ ul {
   overflow: hidden;
   margin-bottom: 12px;
 }
-
 .forest-scene {
   height: 140px;
-  background: linear-gradient(to bottom, #1b3a1b 0%, #0d1f0d 100%);
+  border-radius: 8px;
+  overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 16px;
 }
 
-.forest-creeper,
-.forest-zombie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.fc-head {
-  width: 36px;
-  height: 36px;
-  background: #5D8A3C;
-}
-
-.fc-body {
-  width: 28px;
-  height: 40px;
-  background: #5D8A3C;
-  margin-top: 2px;
+.scene-img {
+  width: 100%;
+  height: 140px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .media-card blockquote {
