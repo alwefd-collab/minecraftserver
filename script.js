@@ -7,6 +7,7 @@ const creatures = [
     categories: ['hostiles'],
     iconClass: 'creeper-icon',
     image: 'Images/Creeper.png',
+    sceneImage: 'Images/creeper_s.jpeg',
     subtitle: 'La criatura explosiva',
     description: 'El Creeper es una de las criaturas más icónicas de Minecraft. Se acerca sigilosamente a los jugadores y explota al estar cerca, causando daño considerable y destruyendo bloques cercanos.',
     type: 'Hostil',
@@ -40,7 +41,8 @@ const creatures = [
     name: 'Zombi',
     categories: ['hostiles'],
     iconClass: 'zombie-icon',
-    image: null,
+    image: 'Images/zombie.png',
+    sceneImage: 'Images/zombie_s.jpeg',
     subtitle: 'El muerto viviente',
     description: 'Los zombis son mobs hostiles que aparecen de noche y en lugares oscuros. Atacan a los jugadores y a los aldeanos, y pueden romper puertas de madera en dificultad difícil.',
     type: 'Hostil',
@@ -74,7 +76,8 @@ const creatures = [
     name: 'Esqueleto',
     categories: ['hostiles'],
     iconClass: 'skeleton-icon',
-    image: null,
+    image: 'Images/skeleton.png',
+    sceneImage: 'Images/skeleton_s.jpeg',
     subtitle: 'El arquero del inframundo',
     description: 'Los esqueletos son mobs hostiles armados con arcos. Atacan desde la distancia y son especialmente peligrosos en grupos o en espacios cerrados.',
     type: 'Hostil',
@@ -108,7 +111,8 @@ const creatures = [
     name: 'Araña',
     categories: ['hostiles', 'neutrales'],
     iconClass: 'spider-icon',
-    image: null,
+    image: 'Images/Spider.png',
+    sceneImage: 'Images/spider_s.jpeg',
     subtitle: 'La trepadora de la noche',
     description: 'Las arañas son mobs que se vuelven hostiles en la oscuridad. Pueden trepar paredes y saltar sobre el jugador, siendo muy peligrosas en cuevas.',
     type: 'Hostil',
@@ -142,7 +146,8 @@ const creatures = [
     name: 'Enderman',
     categories: ['neutrales', 'miticas'],
     iconClass: 'enderman-icon',
-    image: null,
+    image: 'Images/enderman.png',
+    sceneImage: 'Images/enderman_s.jpeg',
     subtitle: 'El teletransportador del End',
     description: 'Los Enderman son criaturas altas y misteriosas. Normalmente son neutrales, pero si miras directamente a sus ojos se vuelven hostiles y pueden teletransportarse.',
     type: 'Neutral',
@@ -176,7 +181,8 @@ const creatures = [
     name: 'Blaze',
     categories: ['hostiles', 'voladoras', 'miticas'],
     iconClass: 'blaze-icon',
-    image: null,
+    image: 'Images/blaze.png',
+    sceneImage: 'Images/blaze_s.jpeg',
     subtitle: 'El guardián del Nether',
     description: 'Los Blazes son mobs voladores del Nether que disparan bolas de fuego. Son esenciales para obtener varas de blaze, necesarias para acceder al End.',
     type: 'Hostil',
@@ -210,7 +216,8 @@ const creatures = [
     name: 'Aldeano',
     categories: ['amigables'],
     iconClass: 'villager-icon',
-    image: null,
+    image: 'Images/villager.png',
+    sceneImage: 'Images/villager_s.jpeg',
     subtitle: 'El habitante del pueblo',
     description: 'Los aldeanos son mobs pacíficos que viven en aldeas. Ofrecen comercio con los jugadores y son fundamentales para obtener objetos raros y encantamientos.',
     type: 'Amigable',
@@ -244,7 +251,8 @@ const creatures = [
     name: 'Wither',
     categories: ['jefes', 'hostiles', 'voladoras', 'miticas'],
     iconClass: 'wither-icon',
-    image: null,
+    image: 'Images/wither.png',
+    sceneImage: 'Images/wither_s.jpeg',
     subtitle: 'El jefe del inframundo',
     description: 'El Wither es un jefe que el jugador puede invocar. Dispara cráneos explosivos, vuela libremente y al bajar de vida se vuelve aún más destructivo, rompiendo bloques a su paso.',
     type: 'Jefe',
@@ -278,7 +286,8 @@ const creatures = [
     name: 'Dragón del End',
     categories: ['jefes', 'voladoras', 'miticas'],
     iconClass: 'dragon-icon',
-    image: null,
+    image: 'Images/dragona.png',
+    sceneImage: 'Images/dragona_s.jpeg',
     subtitle: 'El guardián final del End',
     description: 'El Dragón del End es el jefe principal de Minecraft. Vuela sobre la isla central, destruye cristales de regeneración y representa el desafío final antes de los créditos del juego.',
     type: 'Jefe',
@@ -312,7 +321,8 @@ const creatures = [
     name: 'Warden',
     categories: ['jefes', 'hostiles', 'miticas'],
     iconClass: 'warden-icon',
-    image: null,
+    image: 'Images/warden.png',
+    sceneImage: 'Images/warden_s.jpeg',
     subtitle: 'El guardián de las profundidades',
     description: 'El Warden es uno de los mobs más peligrosos del juego. Ciego pero extremadamente fuerte, detecta vibraciones y sonidos. No debe ser combatido, sino evitado con sigilo.',
     type: 'Jefe',
@@ -346,7 +356,8 @@ const creatures = [
     name: 'Guardián',
     categories: ['acuaticas', 'hostiles'],
     iconClass: 'guardian-icon',
-    image: null,
+    image: 'Images/guardian.png',
+    sceneImage: 'Images/guardian_s.jpeg',
     subtitle: 'El protector del océano',
     description: 'Los guardianes son mobs acuáticos hostiles que protegen monumentos oceánicos. Disparan un rayo láser cargado y hacen que nadar sea mucho más difícil cerca de ellos.',
     type: 'Hostil',
@@ -380,7 +391,8 @@ const creatures = [
     name: 'Ahogado',
     categories: ['acuaticas', 'hostiles'],
     iconClass: 'drowned-icon',
-    image: null,
+    image: 'Images/ahogado.png',
+    sceneImage: 'Images/ahogado_s.jpeg',
     subtitle: 'El zombi de las profundidades',
     description: 'Los ahogados son zombis adaptados al agua. Aparecen en océanos y ríos, pueden empuñar tridentes y son una amenaza constante al explorar bajo el agua.',
     type: 'Hostil',
@@ -414,7 +426,8 @@ const creatures = [
     name: 'Ghast',
     categories: ['voladoras', 'hostiles', 'miticas'],
     iconClass: 'ghast-icon',
-    image: null,
+    image: 'Images/ghast.png',
+    sceneImage: 'Images/ghast_s.jpeg',
     subtitle: 'El llanto del Nether',
     description: 'Los Ghasts son enormes criaturas flotantes del Nether que disparan bolas de fuego. Su llanto melancólico es inconfundible y sus explosiones pueden empujar al jugador fuera de puentes.',
     type: 'Hostil',
@@ -448,7 +461,8 @@ const creatures = [
     name: 'Phantom',
     categories: ['voladoras', 'hostiles'],
     iconClass: 'phantom-icon',
-    image: null,
+    image: 'Images/phantom.png',
+    sceneImage: 'Images/phantom_s.jpeg',
     subtitle: 'La pesadilla del insomne',
     description: 'Los Phantoms son mobs voladores que aparecen cuando el jugador no duerme durante varios días. Atacan desde el cielo en grupos y castigan la falta de descanso.',
     type: 'Hostil',
@@ -482,7 +496,8 @@ const creatures = [
     name: 'Golem de hierro',
     categories: ['amigables', 'neutrales'],
     iconClass: 'golem-icon',
-    image: null,
+    image: 'Images/golem.png',
+    sceneImage: 'Images/golem_s.jpeg',
     subtitle: 'El protector de las aldeas',
     description: 'Los golems de hierro son constructos que defienden aldeas de mobs hostiles. Pueden ser creados por el jugador y son aliados poderosos en combate.',
     type: 'Amigable',
@@ -516,7 +531,8 @@ const creatures = [
     name: 'Lobo',
     categories: ['amigables', 'neutrales'],
     iconClass: 'wolf-icon',
-    image: null,
+    image: 'Images/lobo.png',
+    sceneImage: 'Images/wolf_s.jpeg',
     subtitle: 'El compañero fiel',
     description: 'Los lobos son mobs que pueden domesticarse con huesos. Una vez aliados, siguen al jugador, atacan a sus enemigos y pueden ser curados con carne.',
     type: 'Amigable',
@@ -550,7 +566,8 @@ const creatures = [
     name: 'Vaca',
     categories: ['amigables', 'neutrales'],
     iconClass: 'cow-icon',
-    image: null,
+    image: 'Images/cow.png',
+    sceneImage: 'Images/cow_s.jpeg',
     subtitle: 'La fuente de supervivencia',
     description: 'Las vacas son mobs pasivos esenciales para la supervivencia. Proporcionan cuero, carne y leche, siendo uno de los animales más útiles del juego.',
     type: 'Amigable',
@@ -719,16 +736,13 @@ function renderInfoPanel(creature) { // Dibuja el panel derecho con pestañas, l
     </ul>
   `;
 
+
+
   // Construye el HTML de la escena visual y la cita de la criatura
   const mediaHtml = `
     <div class="media-card">
       <div class="media-image">
-        <div class="forest-scene" style="--scene-color: ${creature.sceneColor}">
-          <div class="forest-creature">
-            <div class="fc-head" style="background: ${creature.sceneColor}"></div>
-            <div class="fc-body" style="background: ${creature.sceneColor}"></div>
-          </div>
-        </div>
+        <img src="${creature.sceneImage}" alt="Escena de ${creature.name}" class="scene-img">
       </div>
       <blockquote>${creature.quote}</blockquote>
     </div>
