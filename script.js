@@ -1,4 +1,7 @@
 // Base de datos de criaturas: cada objeto describe un mob del bestiario
+
+const searchInput = document.getElementById("search")
+
 const creatures = [
   // --- Creeper ---
   {
@@ -619,6 +622,34 @@ const infoPanel = document.querySelector('.info-panel'); // Panel derecho con pe
 const pills = document.querySelectorAll('.pill'); // Botones de filtro por categoría
 const tabs = document.querySelectorAll('.tab'); // Pestañas iniciales del HTML (se recrean al renderizar)
 
+const suggestionsBox = document.getElementById("suggestions");
+
+searchInput.addEventListener("input", () => {
+  const text = searchInput.value.toLowerCase();
+
+  if (!text) {
+    suggestionsBox.innerHTML = "";
+    return;
+  }
+
+  const matches = creatures.filter(c =>
+    c.name.toLowerCase().includes(text)
+  );
+
+  suggestionsBox.innerHTML = matches.map(c => `
+    <li data-id="${c.id}">${c.name}</li>
+  `).join("");
+
+  suggestionsBox.querySelectorAll("li").forEach(li => {
+    li.addEventListener("click", () => {
+      activeCreature = li.dataset.id;
+      updateView();
+      suggestionsBox.innerHTML = "";
+      searchInput.value = "";
+    });
+  });
+});
+
 function hearts(count) { // Convierte puntos de salud en iconos de corazones
   const shown = Math.min(count, 8); // Muestra como máximo 8 corazones visibles
   const extra = count > 8 ? ` +${count - 8}` : ''; // Si hay más de 8, añade texto "+N"
@@ -627,7 +658,9 @@ function hearts(count) { // Convierte puntos de salud en iconos de corazones
 
 function renderCreatureList() { // Dibuja la lista de criaturas según la categoría activa
   const filter = categoryMap[activeCategory]; // Obtiene la función de filtro de la categoría actual
-  const filtered = creatures.filter(filter); // Aplica el filtro al array de criaturas
+  const searchText = searchInput.value.toLowerCase();
+  const filtered = creatures.filter(filter).filter(c =>c.name.toLowerCase().includes(searchText)); 
+  // Aplica el filtro al array de criaturas
 
   if (filtered.length === 0) { // Si no hay criaturas en esta categoría
     // Inserta mensaje de lista vacía en el DOM
@@ -789,7 +822,7 @@ function selectCategory(category) { // Cambia la categoría de filtro al hacer c
     pill.classList.toggle('active', pill.dataset.category === category); // Marca activa la pill seleccionada
   });
   renderCreatureList(); // Vuelve a dibujar la lista filtrada
-  updateView(); // Actualiza los paneles con la criatura resultante
+  updateView(); // Actualiza los paneles con la criatura resultanteEjemplo
 }
 
 function selectTab(tab) { // Cambia la pestaña activa del panel de información
